@@ -20,7 +20,7 @@ docker run -it --rm \
     -v $(pwd)/quorum-maker-ui/webApp:/quorum-maker-ui \
     -w /quorum-maker-ui \
     syneblock/cicd \
-    /bin/sh -c 'npm i opencollective; npm install; ng build --aot'
+    /bin/sh -c 'npm i -S opencollective; ng build --aot'
 
 ## Change the owneship of directory
 chownDir 'quorum-maker-ui'
